@@ -2,6 +2,14 @@
 public class Main {
     public static void main(String[] args) {
 
+        new Car("Swift", 430, 4545);
+        new Car("XYUZ", 400, 4553243);
+        new Car("Honda", 380, 4545);
+
+        /*new Thread(
+                new Car("XYUZ", 400, 4553243)
+        ).start();
+
         Car c1 = new Car("Swift", 430, 4545);
         Thread t1 = new Thread(c1);
         t1.start();
@@ -20,7 +28,7 @@ public class Main {
             t3.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
 
         System.out.println("----- Race Over -----");
     }

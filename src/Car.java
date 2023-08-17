@@ -8,6 +8,8 @@ public class Car implements Runnable {
         this.name = name;
         this.speed = speed;
         this.color = color;
+
+        new Thread(this).start();
     }
 
     @Override
@@ -15,7 +17,7 @@ public class Car implements Runnable {
         for(int i = 0; i <= 1000; i++) {
             System.out.println(name + " -> " + i);
             try {
-                Thread.sleep(500- speed);
+                Thread.sleep(450 - speed);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
